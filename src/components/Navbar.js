@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {
     AppBar,
     Toolbar,
@@ -9,45 +9,104 @@ import {
     Divider,
     List,
     Typography,
-    Box
+    Box,
+    ListItemIcon
 } from '@material-ui/core'
 import {
-    ArrowBack,
-    AssignmentInd,
-    Home,
-    Apps,
-    ContactMail
+    ArrowBack
 } from '@material-ui/icons'
-import {makeStyles} from "@material-ui/styles";
-import avatar from '../images/avatarko_anonim.jpg'
+import avatarPict from '../images/business-male-user-avatar.png'
+import {menuIcons, useStyles} from "./styles";
+import MobileRightMenuSlider from '@material-ui/core/Drawer'
 
-//CSS Styles
-const useStyles = makeStyles({
-    menuSliderContainer:{
-        width:250,
-        background:"#511",
-        height:"30rem"
-    }
-})
 
+/**
+ * Компонент Navbar
+ * @returns {*}
+ */
 export default () => {
+
+    const [state, setState] = useState({
+        right: false
+        }
+    );
+
+    const toggleSlider = (slider, open) => () =>{
+        setState({...state, [slider]: open})
+    }
     const {
-        menuSliderContainer
-    }=useStyles()
+        menuSliderContainer,
+        avatar,
+        listItem
+    } = useStyles();
+
+    /**
+     * Функция рендерит элемент списка иконок профиля
+     * @param {Object}item - элемент массива
+     * @param {String}key - уникальный ключ
+     * @returns {String} - возвращает JSX разметку
+     */
+    const renderListItem = (item, key) => {
+        const {listIcon, listText} = item;
+
+        return (
+                        <ListItem  button key={key}>
+                            <ListItemIcon className={listItem}>
+                                {listIcon}
+                            </ListItemIcon>
+                            <ListItemText className={listItem}>
+                                {listText}
+                            </ListItemText>
+                        </ListItem>
+                )
+    };
+    /**
+     * Отображение бокового меню портфолио
+     * @param {String}slider - выбор стороны меню
+     * @returns {Object}JSX - возвращает разметку бокового меню
+     */
+    const sideList = slider =>(
+
+        <Box component={"div"}
+             className={menuSliderContainer}
+             onClick={toggleSlider(slider, false)}
+        >
+            <Avatar
+                src={avatarPict}
+                alt={"Avatar picture"}
+                className={avatar}
+            />
+            <Divider/>
+            <List>
+                {menuIcons.map(renderListItem)}
+            </List>
+        </Box>
+
+    )
+
     return(
         <>
-            <Box component={"div"} className={menuSliderContainer}>
-                <Avatar src={avatar} alt={"Avatar picture"}/>
-            </Box>
             <Box component={"nav"}>
-                <AppBar position={"static"} style={{background:"#222"}}>
+                <AppBar position={"static"}
+                        style={{background:"#222"}}
+                >
                     <Toolbar>
-                        <IconButton>
+                        <IconButton onClick={toggleSlider("right", true)}>
                             <ArrowBack style={{color:"tomato"}}/>
                         </IconButton>
-                        <Typography variant={"h5"} style={{color:"tan"}}>
+                        <Typography variant={"h5"}
+                                    style={{color:"tan"}}
+                        >
                             {"Portfolio"}
                         </Typography>
+
+                        <MobileRightMenuSlider
+                            anchor={"right"}
+                            open={state.right}
+                            onClose={toggleSlider("right", false)}
+                        >
+                            {sideList("right")}
+                        </MobileRightMenuSlider>
 
                     </Toolbar>
                 </AppBar>
