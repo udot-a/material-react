@@ -3,4 +3,4 @@
 to  run clone application 
 run ```nmp install```
 and than run ```npm start```
-![Иллюстрация к проекту](https://github.com/udot-a/material-react/master/src/images/screenshot.png)
+![Иллюстрация к проекту](https://github.com/udot-a/material-react/raw/master/src/images/screenshot.png)
