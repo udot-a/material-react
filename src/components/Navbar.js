@@ -15,10 +15,10 @@ import {
 import {
     ArrowBack
 } from '@material-ui/icons'
-import avatarPict from '../images/business-male-user-avatar.png'
+import avatarPict from '../images/business-male-user-avatar.png';
 import {menuIcons, useStyles} from "./styles";
-import MobileRightMenuSlider from '@material-ui/core/Drawer'
-
+import MobileRightMenuSlider from '@material-ui/core/Drawer';
+import {Link} from 'react-router-dom'
 
 /**
  * Компонент Navbar
@@ -47,10 +47,14 @@ export default () => {
      * @returns {String} - возвращает JSX разметку
      */
     const renderListItem = (item, key) => {
-        const {listIcon, listText} = item;
+        const {listIcon, listText, listPath} = item;
 
         return (
-                        <ListItem  button key={key}>
+                        <ListItem  button
+                                   key={key}
+                                   component={Link}
+                                   to={listPath}
+                        >
                             <ListItemIcon className={listItem}>
                                 {listIcon}
                             </ListItemIcon>
@@ -87,7 +91,7 @@ export default () => {
     return(
         <>
             <Box component={"nav"}>
-                <AppBar position={"static"}
+                <AppBar position={"sticky"}
                         style={{background:"#222"}}
                 >
                     <Toolbar>

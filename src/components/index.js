@@ -26,7 +26,7 @@ const Home = () =>{
                        shape:{
                            type: "circle",
                            stroke: {
-                               width:1,
+                               width:2,
                                color: "tomato"
                            }
                        },
