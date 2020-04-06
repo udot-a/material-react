@@ -173,7 +173,7 @@ export const menuIcons = [
     {
         listIcon: <Apps/>,
         listText: "Portfolio",
-        listPath: "/"
+        listPath: "/portfolio"
 
     },
     {
