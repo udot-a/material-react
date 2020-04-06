@@ -2,7 +2,6 @@ import {makeStyles} from "@material-ui/styles";
 import {Apps, AssignmentInd, ContactMail, Home} from "@material-ui/icons";
 import React from "react";
 
-const FIRST = "../images/apple.jpg";
 
 /**
  * Style uses in all components
@@ -179,7 +178,7 @@ export const menuIcons = [
     {
         listIcon: <ContactMail/>,
         listText: "Contacts",
-        listPath: "/"
+        listPath: "/contacts"
 
     },
 ]

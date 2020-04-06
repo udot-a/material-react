@@ -19,6 +19,7 @@ import avatarPict from '../images/business-male-user-avatar.png';
 import {menuIcons, useStyles} from "./styles";
 import MobileRightMenuSlider from '@material-ui/core/Drawer';
 import {Link} from 'react-router-dom'
+import Footer from "./Footer";
 
 /**
  * Компонент Navbar
@@ -110,6 +111,7 @@ export default () => {
                             onClose={toggleSlider("right", false)}
                         >
                             {sideList("right")}
+                            <Footer/>
                         </MobileRightMenuSlider>
 
                     </Toolbar>
