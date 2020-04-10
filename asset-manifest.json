@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/material-react/static/css/main.b58b1659.chunk.css",
-    "main.js": "/material-react/static/js/main.92032d50.chunk.js",
-    "main.js.map": "/material-react/static/js/main.92032d50.chunk.js.map",
+    "main.js": "/material-react/static/js/main.620ab092.chunk.js",
+    "main.js.map": "/material-react/static/js/main.620ab092.chunk.js.map",
     "runtime-main.js": "/material-react/static/js/runtime-main.9b6315d1.js",
     "runtime-main.js.map": "/material-react/static/js/runtime-main.9b6315d1.js.map",
     "static/js/2.510ef64a.chunk.js": "/material-react/static/js/2.510ef64a.chunk.js",
     "static/js/2.510ef64a.chunk.js.map": "/material-react/static/js/2.510ef64a.chunk.js.map",
     "index.html": "/material-react/index.html",
-    "precache-manifest.505cf935e7e5be9567b96e5584e869fc.js": "/material-react/precache-manifest.505cf935e7e5be9567b96e5584e869fc.js",
+    "precache-manifest.4757c20514561933b33277564226dba9.js": "/material-react/precache-manifest.4757c20514561933b33277564226dba9.js",
     "service-worker.js": "/material-react/service-worker.js",
     "static/css/main.b58b1659.chunk.css.map": "/material-react/static/css/main.b58b1659.chunk.css.map",
     "static/js/2.510ef64a.chunk.js.LICENSE.txt": "/material-react/static/js/2.510ef64a.chunk.js.LICENSE.txt",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.9b6315d1.js",
     "static/js/2.510ef64a.chunk.js",
     "static/css/main.b58b1659.chunk.css",
-    "static/js/main.92032d50.chunk.js"
+    "static/js/main.620ab092.chunk.js"
   ]
 }
