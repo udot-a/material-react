@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.bf67ab86.chunk.css",
-    "main.js": "/static/js/main.ea171b25.chunk.js",
-    "main.js.map": "/static/js/main.ea171b25.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.bc1ce775.js",
-    "runtime-main.js.map": "/static/js/runtime-main.bc1ce775.js.map",
-    "static/js/2.510ef64a.chunk.js": "/static/js/2.510ef64a.chunk.js",
-    "static/js/2.510ef64a.chunk.js.map": "/static/js/2.510ef64a.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.6476104a2fa8a6ad47e3bf9e15f88faf.js": "/precache-manifest.6476104a2fa8a6ad47e3bf9e15f88faf.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.bf67ab86.chunk.css.map": "/static/css/main.bf67ab86.chunk.css.map",
-    "static/js/2.510ef64a.chunk.js.LICENSE.txt": "/static/js/2.510ef64a.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/static/media/Coffee-apple-iphone-laptop.cd5d75ee.jpg",
-    "static/media/E-shop.png": "/static/media/E-shop.0c978538.png",
-    "static/media/Project3.png": "/static/media/Project3.ac3bdac9.png",
-    "static/media/business-male-user-avatar.png": "/static/media/business-male-user-avatar.feae95c9.png",
-    "static/media/project2.png": "/static/media/project2.ce7f8490.png"
+    "main.css": "/material-react/static/css/main.b58b1659.chunk.css",
+    "main.js": "/material-react/static/js/main.92032d50.chunk.js",
+    "main.js.map": "/material-react/static/js/main.92032d50.chunk.js.map",
+    "runtime-main.js": "/material-react/static/js/runtime-main.9b6315d1.js",
+    "runtime-main.js.map": "/material-react/static/js/runtime-main.9b6315d1.js.map",
+    "static/js/2.510ef64a.chunk.js": "/material-react/static/js/2.510ef64a.chunk.js",
+    "static/js/2.510ef64a.chunk.js.map": "/material-react/static/js/2.510ef64a.chunk.js.map",
+    "index.html": "/material-react/index.html",
+    "precache-manifest.505cf935e7e5be9567b96e5584e869fc.js": "/material-react/precache-manifest.505cf935e7e5be9567b96e5584e869fc.js",
+    "service-worker.js": "/material-react/service-worker.js",
+    "static/css/main.b58b1659.chunk.css.map": "/material-react/static/css/main.b58b1659.chunk.css.map",
+    "static/js/2.510ef64a.chunk.js.LICENSE.txt": "/material-react/static/js/2.510ef64a.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/material-react/static/media/Coffee-apple-iphone-laptop.cd5d75ee.jpg",
+    "static/media/E-shop.png": "/material-react/static/media/E-shop.0c978538.png",
+    "static/media/Project3.png": "/material-react/static/media/Project3.ac3bdac9.png",
+    "static/media/business-male-user-avatar.png": "/material-react/static/media/business-male-user-avatar.feae95c9.png",
+    "static/media/project2.png": "/material-react/static/media/project2.ce7f8490.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.bc1ce775.js",
+    "static/js/runtime-main.9b6315d1.js",
     "static/js/2.510ef64a.chunk.js",
-    "static/css/main.bf67ab86.chunk.css",
-    "static/js/main.ea171b25.chunk.js"
+    "static/css/main.b58b1659.chunk.css",
+    "static/js/main.92032d50.chunk.js"
   ]
 }
